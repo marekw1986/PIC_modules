@@ -20778,11 +20778,15 @@ SOurce: www.abracon.com</description>
 <label x="119.38" y="368.3" size="1.4224" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="DP_RST" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="IC4" gate="G$1" pin="RESET_N"/>
 <wire x1="391.16" y1="-68.58" x2="391.16" y2="-91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="RB10/AN10/CVREF/PMA13"/>
+<wire x1="20.32" y1="375.92" x2="15.24" y2="375.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
