@@ -18343,7 +18343,6 @@ SOurce: www.abracon.com</description>
 <part name="R43" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0402"/>
 <part name="GND55" library="supply1" deviceset="GND" device=""/>
-<part name="GND73" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="crystal" deviceset="ASE" device=""/>
 <part name="GND74" library="supply1" deviceset="GND" device=""/>
 </parts>
@@ -18537,7 +18536,6 @@ SOurce: www.abracon.com</description>
 <instance part="R43" gate="G$1" x="558.8" y="-17.78" rot="R90"/>
 <instance part="R1" gate="G$1" x="391.16" y="-63.5" rot="R270"/>
 <instance part="GND55" gate="1" x="342.9" y="236.22"/>
-<instance part="GND73" gate="1" x="322.58" y="236.22"/>
 <instance part="U$1" gate="G$1" x="157.48" y="325.12" rot="MR0"/>
 <instance part="GND74" gate="1" x="172.72" y="312.42" rot="MR0"/>
 </instances>
@@ -19007,30 +19005,6 @@ SOurce: www.abracon.com</description>
 <pinref part="C59" gate="G$1" pin="2"/>
 <pinref part="GND54" gate="1" pin="GND"/>
 <wire x1="487.68" y1="-68.58" x2="487.68" y2="-66.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SV1" gate="G$1" pin="5"/>
-<pinref part="GND55" gate="1" pin="GND"/>
-<wire x1="340.36" y1="248.92" x2="342.9" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="248.92" x2="342.9" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="G$1" pin="3"/>
-<wire x1="342.9" y1="246.38" x2="342.9" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="246.38" x2="342.9" y2="246.38" width="0.1524" layer="91"/>
-<junction x="342.9" y="246.38"/>
-</segment>
-<segment>
-<pinref part="SV1" gate="G$1" pin="8"/>
-<pinref part="GND73" gate="1" pin="GND"/>
-<wire x1="325.12" y1="251.46" x2="322.58" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="251.46" x2="322.58" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="G$1" pin="6"/>
-<wire x1="322.58" y1="248.92" x2="322.58" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="246.38" x2="322.58" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="248.92" x2="322.58" y2="248.92" width="0.1524" layer="91"/>
-<junction x="322.58" y="248.92"/>
-<pinref part="SV1" gate="G$1" pin="4"/>
-<wire x1="325.12" y1="246.38" x2="322.58" y2="246.38" width="0.1524" layer="91"/>
-<junction x="322.58" y="246.38"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -19953,9 +19927,9 @@ SOurce: www.abracon.com</description>
 <label x="119.38" y="408.94" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="1"/>
-<wire x1="340.36" y1="243.84" x2="345.44" y2="243.84" width="0.1524" layer="91"/>
-<label x="345.44" y="243.84" size="1.4224" layer="95" xref="yes"/>
+<pinref part="SV1" gate="G$1" pin="5"/>
+<wire x1="340.36" y1="248.92" x2="345.44" y2="248.92" width="0.1524" layer="91"/>
+<label x="345.44" y="248.92" size="1.4224" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="1WIRE" class="0">
@@ -19963,6 +19937,11 @@ SOurce: www.abracon.com</description>
 <pinref part="IC3" gate="G$1" pin="RA14/INT3/SCL1/AETXCLK"/>
 <wire x1="20.32" y1="408.94" x2="15.24" y2="408.94" width="0.1524" layer="91"/>
 <label x="15.24" y="408.94" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="3"/>
+<wire x1="340.36" y1="246.38" x2="345.44" y2="246.38" width="0.1524" layer="91"/>
+<label x="345.44" y="246.38" size="1.4224" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -19972,9 +19951,9 @@ SOurce: www.abracon.com</description>
 <label x="15.24" y="406.4" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="2"/>
-<wire x1="325.12" y1="243.84" x2="320.04" y2="243.84" width="0.1524" layer="91"/>
-<label x="320.04" y="243.84" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<pinref part="SV1" gate="G$1" pin="6"/>
+<wire x1="325.12" y1="248.92" x2="320.04" y2="248.92" width="0.1524" layer="91"/>
+<label x="320.04" y="248.92" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AN_3V" class="0">
@@ -20735,11 +20714,15 @@ SOurce: www.abracon.com</description>
 <wire x1="558.8" y1="-22.86" x2="558.8" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FLASH_CS_NOT" class="0">
+<net name="SCL1A" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="SCL1A/SDO1A/U1ATX/RF8"/>
 <wire x1="114.3" y1="368.3" x2="119.38" y2="368.3" width="0.1524" layer="91"/>
 <label x="119.38" y="368.3" size="1.4224" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="1"/>
+<wire x1="340.36" y1="243.84" x2="345.44" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DP_RST" class="0">
@@ -20765,6 +20748,11 @@ SOurce: www.abracon.com</description>
 <segment>
 <pinref part="IC3" gate="G$1" pin="OSC2/CLKO/RC15"/>
 <wire x1="114.3" y1="322.58" x2="119.38" y2="322.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="4"/>
+<wire x1="325.12" y1="246.38" x2="320.04" y2="246.38" width="0.1524" layer="91"/>
+<label x="320.04" y="246.38" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
