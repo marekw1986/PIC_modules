@@ -2802,6 +2802,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="MOLEX" x="63.5" y="57.15" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R18" library="rcl" package="R0805" value="" x="43.18" y="47.625" rot="R270"/>
+<element name="R20" library="rcl" package="R0603" value="" x="20.32" y="13.8294" rot="MR270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3035,9 +3036,11 @@ design rules under a new name.</description>
 <wire x1="20.0288" y1="30.525" x2="21.5138" y2="30.525" width="0.4572" layer="1"/>
 <wire x1="20.0288" y1="34.425" x2="21.5138" y2="34.425" width="0.4572" layer="1"/>
 <wire x1="21.5138" y1="34.425" x2="21.5138" y2="33.775" width="0.4572" layer="1"/>
-<wire x1="21.5138" y1="33.655" x2="21.5138" y2="30.525" width="0.4572" layer="1"/>
+<wire x1="21.5138" y1="33.775" x2="21.5138" y2="30.525" width="0.4572" layer="1"/>
 <wire x1="20.0288" y1="33.775" x2="21.5138" y2="33.775" width="0.4572" layer="1"/>
-<wire x1="21.5138" y1="33.775" x2="21.5138" y2="33.655" width="0.4572" layer="1"/>
+<contactref element="R20" pad="2"/>
+<wire x1="17.995" y1="12.1294" x2="19.47" y2="12.1294" width="0.6096" layer="16"/>
+<wire x1="19.47" y1="12.1294" x2="20.32" y2="12.9794" width="0.6096" layer="16"/>
 </signal>
 <signal name="3V">
 <contactref element="IC3" pad="37"/>
@@ -3517,7 +3520,8 @@ design rules under a new name.</description>
 <wire x1="26.6446" y1="22.86" x2="26.6446" y2="24.4094" width="0.3048" layer="1"/>
 <wire x1="26.6446" y1="22.86" x2="26.6446" y2="17.8562" width="0.3048" layer="1"/>
 <wire x1="26.6446" y1="17.8562" x2="25.8572" y2="17.0688" width="0.3048" layer="1"/>
-<wire x1="14.3" y1="16.285" x2="21.5682" y2="16.285" width="0.3048" layer="16"/>
+<wire x1="14.3" y1="16.285" x2="20.32" y2="16.285" width="0.3048" layer="16"/>
+<wire x1="20.32" y1="16.285" x2="21.5682" y2="16.285" width="0.3048" layer="16"/>
 <wire x1="26.6446" y1="21.59" x2="26.6446" y2="22.86" width="0.3048" layer="16"/>
 <wire x1="21.5682" y1="16.285" x2="26.6446" y2="21.3614" width="0.3048" layer="16"/>
 <wire x1="26.6446" y1="22.86" x2="26.6446" y2="21.3614" width="0.3048" layer="16"/>
@@ -3533,6 +3537,8 @@ design rules under a new name.</description>
 <wire x1="32.4624" y1="31.825" x2="33.009840625" y2="31.277559375" width="0.2032" layer="1"/>
 <wire x1="34.8996" y1="30.2514" x2="34.8996" y2="30.9626" width="0.2032" layer="1"/>
 <wire x1="34.584640625" y1="31.277559375" x2="34.8996" y2="30.9626" width="0.2032" layer="1"/>
+<contactref element="R20" pad="1"/>
+<wire x1="20.32" y1="14.6794" x2="20.32" y2="16.285" width="0.3048" layer="16"/>
 </signal>
 <signal name="MOSI">
 <contactref element="IC4" pad="P$7"/>
